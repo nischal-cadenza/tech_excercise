@@ -12,9 +12,12 @@ namespace StargateAPI.Controllers
     public class PersonController : ControllerBase
     {
         private readonly IMediator _mediator;
-        public PersonController(IMediator mediator)
+        private readonly ILogger<PersonController> _logger;
+
+        public PersonController(IMediator mediator, ILogger<PersonController> logger)
         {
             _mediator = mediator;
+            _logger = logger;
         }
 
         [HttpGet("")]
@@ -31,6 +34,7 @@ namespace StargateAPI.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Error retrieving people.");
                 return this.GetResponse(new BaseResponse()
                 {
                     Message = ex.Message,
@@ -54,6 +58,7 @@ namespace StargateAPI.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Error retrieving person {Name}", name);
                 return this.GetResponse(new BaseResponse()
                 {
                     Message = ex.Message,
@@ -77,6 +82,7 @@ namespace StargateAPI.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "Error creating person {Name}", name);
                 return this.GetResponse(new BaseResponse()
                 {
                     Message = ex.Message,
