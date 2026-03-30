@@ -10,7 +10,7 @@ Stargate API — an Astronaut Career Tracking System (ACTS) built as a technical
 
 ```bash
 # From the API project directory
-cd package/exercise1/api
+cd api
 
 # Restore dependencies
 dotnet restore

@@ -2,13 +2,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.2.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "package", "package", "{BBD3DA59-949E-DE27-B4B0-19AAD67562FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StargateAPI", "api\StargateAPI.csproj", "{59CB7A78-F439-543C-58CB-3FAF6298E883}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exercise1", "exercise1", "{7B23DBB5-4EE4-173F-643F-3970F40CBE4A}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "api", "api", "{E6CC36EC-77AA-5E1F-610A-8E9907AB8576}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StargateAPI", "package\exercise1\api\StargateAPI.csproj", "{59CB7A78-F439-543C-58CB-3FAF6298E883}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StargateAPI.Tests", "StargateAPI.Tests\StargateAPI.Tests.csproj", "{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,14 +16,13 @@ Global
 		{59CB7A78-F439-543C-58CB-3FAF6298E883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{59CB7A78-F439-543C-58CB-3FAF6298E883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{59CB7A78-F439-543C-58CB-3FAF6298E883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1B2C3D4-E5F6-7890-ABCD-EF1234567890}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{7B23DBB5-4EE4-173F-643F-3970F40CBE4A} = {BBD3DA59-949E-DE27-B4B0-19AAD67562FF}
-		{E6CC36EC-77AA-5E1F-610A-8E9907AB8576} = {7B23DBB5-4EE4-173F-643F-3970F40CBE4A}
-		{59CB7A78-F439-543C-58CB-3FAF6298E883} = {E6CC36EC-77AA-5E1F-610A-8E9907AB8576}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3C8293BA-1668-4948-B91B-827F40462548}

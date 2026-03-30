@@ -16,11 +16,3 @@ Thumbs.db
 
 ## Claude
 .claude/
-
-## Exercise archive and misc
-*.tgz
-LICENSE
-bugs.md
-decision.md
-progress.md
-INTERVIEW_GUIDE.md
